@@ -2,9 +2,6 @@ const mysql = require('mysql2');
 
 const is_heroku = process.env.IS_HEROKU || false;
 
-if(process.env.IS_HEROKU) {
-	var database = mysql.createPool(dbConfig_localhost);
-}
 
 //mysql://b6fb24cb4c8c37:702be0f5@us-cdbr-east-03.cleardb.com/heroku_a79dfbc72e06757?reconnect=true
 const dbConfigHeroku = {
